@@ -1,0 +1,142 @@
+@charset "utf-8";
+.margin{
+  margin:0 0.45rem;
+  box-sizing:border-box;
+  padding:0;
+}
+body{
+  width:10.8rem;
+  background: #ebf0f3;
+  padding:1.68rem 0 2rem 0;
+}
+@mixin flex_center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header{
+  box-sizing: border-box;
+  width:10.8rem;
+  height:1.68rem;
+  position: fixed;
+  left:0;
+  top:0;
+  z-index: 999;
+  .header_nav{
+    position: absolute;
+    width:10.8rem;
+    height:1.68rem;
+    background: #584f60;
+    .cdup{
+      width:1.05rem;
+      height:1.05rem;
+      border-radius: 50%;
+      position: absolute;
+      left:0.55rem;
+      top:0rem;
+      bottom:0;
+      margin:auto;
+      @include flex_center;
+      img{
+        width:0.4rem;
+        height:0.4rem;
+      }
+    }
+    .h3{
+      margin-left:0.45rem;
+      position: absolute;
+      left:1.28rem;
+      font:0.48rem/1.68rem "微软雅黑";
+      color:#fff;
+      top:0;
+    }
+
+  }
+
+}
+.goods_msg{
+  background: #fff;
+  padding:0.5rem 0.45rem;
+  display: flex;
+  align-items: center;
+  .goods_pic{
+    margin-right:0.45rem;
+    width:2.94rem;
+    height:2.94rem;
+    background: #f7f7f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+      width:2.05rem;
+      height:2.2rem;
+
+    }
+  }
+
+  .describe{
+    .describe_msg{
+      h3{
+        font:0.44rem "微软雅黑";
+        color:#333;
+      }
+      p{
+        font:0.34rem "微软雅黑";
+        color:#666;
+      }
+    }
+  }
+  .price{
+    padding:0.35rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p{
+      font:700 0.44rem "微软雅黑";
+      color:#24c789;
+    }
+
+    .add_sub{
+      display: flex;
+      align-items: center;
+      img{
+        width:0.86rem;
+        height:0.86rem;
+      }
+      span{
+        padding:0 0.2rem;
+        font:0.4rem "微软雅黑";
+        color:#24c789;
+      }
+    }
+  }
+
+}
+footer{
+  padding:0 0.45rem;
+  background: #fff;
+  box-sizing: border-box;
+  width:10.8rem;
+  height:2rem;
+  position: fixed;
+  bottom: 0;
+  left:0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  span{
+    font:0.54rem "微软雅黑";
+    color:#6edab1;
+  }
+  .account{
+    font:0.54rem "微软雅黑";
+    color:#fff;
+    display: flex;
+    align-items: center;
+    margin-left: 0.45rem;
+    padding:0.35rem 0.55rem;
+    background: #93c9af;
+    border-radius: 0.1rem ;
+  }
+}
+
